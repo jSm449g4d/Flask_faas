@@ -1,0 +1,16 @@
+# pip3_package
+wheel
+setuptools
+
+# server
+flask
+psutil
+waitress
+
+# application
+google-cloud-firestore
+google-cloud-storage
+BeautifulSoup4
+janome
+urllib3
+certifi

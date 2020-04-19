@@ -1,0 +1,39 @@
+steps:
+    # janome_banilla
+    - name: gcr.io/cloud-builders/gcloud
+      args: 
+        - functions
+        - deploy
+        - API_for_Janome_doe
+        - --trigger-http
+        - --allow-unauthenticated
+        - --region
+        - asia-northeast1
+        - --runtime
+        - python37
+        - --memory
+        - 1024MB
+        - --entry-point
+        - show
+        - --timeout
+        - "180"
+      dir: Flask/janome_banilla
+    # nicoapi
+    - name: gcr.io/cloud-builders/gcloud
+      args: 
+        - functions
+        - deploy
+        - nicoapi_faas
+        - --trigger-http
+        - --allow-unauthenticated
+        - --region
+        - asia-northeast1
+        - --runtime
+        - python37
+        - --memory
+        - 256MB
+        - --entry-point
+        - show
+        - --timeout
+        - "120"
+      dir: Flask/nicoapi

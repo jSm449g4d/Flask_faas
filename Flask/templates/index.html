@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flask_Index</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+    <div class="m-2">
+        <div class="d-flex justify-content-between">
+            <h2 style="font-family:Impact;color:indigo;"><i class="fas fa-book mr-1"></i>Index</h2>
+            <h4 style="font-family:Courier;color:darkgreen;">
+                <i class="fas fa-flask fa-lg faa-wrench animated mr-1"></i>Flask</h4>
+        </div>
+        <table class="table table-sm table-bordered" style="background-color: azure;color: #555000;">
+            <thead>
+                <tr>
+                    <th class="text-center" colspan="2">STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Access Counter</td>
+                    <td>{{STATUS_ACCESS_COUNTER}}</td>
+                </tr>
+                <tr>
+                    <td>Timestamp</td>
+                    <td>{{STATUS_ACCESS_TIMESTAMP}}</td>
+                </tr>
+                <tr>
+                    <td>Python version</td>
+                    <td>{{STATUS_PYTHON_VERSION}}</td>
+                </tr>
+                <tr>
+                    <td>Flask version</td>
+                    <td>{{STATUS_FLASK_VERSION}}</td>
+                </tr>
+                <tr>
+                    <td>OS</td>
+                    <td>{{STATUS_RESOURCE_OS}}</td>
+                </tr>
+                <tr>
+                    <td>CPU ( physical / logical )</td>
+                    <td>{{STATUS_RESOURCE_CORE}}</td>
+                </tr>
+                <tr>
+                    <td>DRAM ( used / total )</td>
+                    <td>{{STATUS_RESOURCE_MEM}}</td>
+                </tr>
+                <tr>
+                    <td>Resource Health</td>
+                    <td>{{STATUS_RESOURCE_HEALTH}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-sm table-bordered mt-2" style="background-color: khaki;color: navy;">
+            <thead>
+                <tr>
+                    <th class="text-center" colspan="2">Links</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="/app_tsx.html">Reactなおへや</a></td>
+                    <td>まさかReactにindexページが出来るとは...</td>
+                </tr>
+                <tr>
+                    <td><a href="/app_tsx.html?app_tsx=mypage.js">マイページ</a></td>
+                    <td>MyPage</td>
+                </tr>
+                <tr>
+                    <td><a href="/app_tsx.html?app_tsx=tptef.js">TPTEF</a></td>
+                    <td>毎度実験に使われるSPAです</td>
+                </tr>
+                <tr>
+                    <td><a href="/app_tsx.html?app_tsx=nicoapi.js">NicoAPI</a></td>
+                    <td>APIクローラです</td>
+                </tr>
+                <tr>
+                    <td><a href="/Flask/nicoapi/main.py">nicoapi_faas</a></td>
+                    <td>NicoAPIのクローラ本体です</td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-outline-secondary m-2" href="/">BACK</a>
+    </div>
+
+    <!--CSS_CDN-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" media="print"
+        onload="window.FA_css= 1;this.media='all';" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css"
+        rel="stylesheet" media="print" onload="window.FAAcss= 1;this.media='all';" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        media="print" onload="window.Bs_css= 1;this.media='all';" />
+    <!--CSS_CDN-->
+    <!--Bootstrap + jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script>if (window.jQuery == null) document.write('<script src="/static/node_modules/jquery/dist/jquery.min.js"><\/script>');</script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script>if (window.Popper == null) document.write('<script src="/static/node_modules/popper.js/dist/umd/popper.min.js"><\/script>');</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"></script>
+    <script>if ($.fn.modal == null) document.write('<script src="/static/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"><\/script>');</script>
+    <!--Bootstrap + jQuery-->
+    <!--CSS_FB-->
+    <script>if (window.FA_css == null) document.write('<link href="/static/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" \/>');</script>
+    <script>if (window.FAAcss == null) document.write('<link href="/static/node_modules/font-awesome-animation/dist/font-awesome-animation.min.css" rel="stylesheet" \/>');</script>
+    <script>if (window.Bs_css == null) document.write('<link href="/static/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" \/>');</script>
+    <!--CSS_FB-->
+</body>
+
+</html>
