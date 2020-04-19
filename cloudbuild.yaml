@@ -35,5 +35,5 @@ steps:
         - --entry-point
         - show
         - --timeout
-        - "120"
+        - "300"
       dir: Flask/nicoapi
