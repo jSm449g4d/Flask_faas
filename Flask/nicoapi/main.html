@@ -6,25 +6,6 @@
     <meta charset="utf-8">
     <title>nicoapi_faas</title>
     <link rel="shortcut icon" href="/favicon.ico">
-</head>
-
-<body>
-    <div class="m-2">
-        <div class="d-flex justify-content-between">
-            <h2 style="font-family:Impact;color:black;">
-                <i class="fas fa-satellite mr-1"></i>nicoapi_faas
-            </h2>
-            <h4 style="font-family:Courier;color:darkgreen;">
-                <i class="fas fa-flask fa-lg faa-wrench animated mr-1"></i>Flask
-            </h4>
-        </div>
-        <div class="bg-light">
-            {{STATUS_LINES}}
-            <h5>この関数は自動的に起動されます</h5>
-        </div>
-        <a class="btn btn-outline-secondary m-2" href="/">BACK</a>
-    </div>
-
     <!--CSS_CDN-->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" media="print"
         onload="window.FA_css= 1;this.media='all';" />
@@ -34,6 +15,25 @@
         crossorigin="anonymous" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         media="print" onload="window.Bs_css= 1;this.media='all';" />
     <!--CSS_CDN-->
+</head>
+
+<body>
+    <div class="p-2 bg-light">
+        <div class="d-flex justify-content-between">
+            <h2 style="font-family:Impact;color:black;">
+                <i class="fas fa-satellite mr-1"></i>nicoapi_faas
+            </h2>
+            <h4 style="font-family:Courier;color:darkgreen;">
+                <i class="fas fa-flask fa-lg faa-wrench animated mr-1"></i>Flask
+            </h4>
+        </div>
+        <div style="background:skyblue;">
+            {{STATUS_LINES}}
+            <h5>この関数は自動的に起動されます</h5>
+        </div>
+        <a class="btn btn-outline-secondary m-2" href="/">BACK</a>
+    </div>
+
     <!--Bootstrap + jQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script>if (window.jQuery == null) document.write('<script src="/static/node_modules/jquery/dist/jquery.min.js"><\/script>');</script>
